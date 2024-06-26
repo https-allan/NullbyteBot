@@ -16,14 +16,10 @@ const discordClient = new Client({
 });
 
 let receivedMessages = [];
-let discordBotStatus;
+let discordBotStatus = "Desconectado";
 
 discordClient.once("ready", async (client) => {
-  if (client) {
-    discordBotStatus = "Funcionando";
-  } else {
-    discordBotStatus = "Desconectado";
-  }
+  discordBotStatus = "Funcionando";
 });
 
 discordClient.on("messageCreate", async (message) => {
