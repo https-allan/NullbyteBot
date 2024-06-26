@@ -5,6 +5,9 @@ async function fetchStatus() {
 
     const messagesDirect = document.getElementById("messages");
     const activityLog = document.getElementById("activityLog");
+    const status = document.getElementById("status");
+
+    status.innerText = data.status;
 
     messagesDirect.innerText = data.messages.length;
 
