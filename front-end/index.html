@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Monitor de Atividade do BOT</h1>
+      </header>
+
+      <section class="status-box">
+        <h3>Status atual:</h3>
+        <span id="status">Desconectado</span>
+      </section>
+
+      <section class="info-cards">
+        <div class="card">
+          <h3>Servidores</h3>
+          <p id="servers">0</p>
+        </div>
+        <div class="card">
+          <h3>Usuários</h3>
+          <p id="users">0</p>
+        </div>
+        <div class="card">
+          <h3>Mensagens</h3>
+          <p id="messages">0</p>
+        </div>
+      </section>
+
+      <section class="activity-log">
+        <h3>Atividade Recente</h3>
+        <ul id="activityLog"></ul>
+      </section>
+    </div>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
